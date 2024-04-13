@@ -812,16 +812,45 @@ extern __bank0 __bit __timeout;
 
 
 
+typedef uint32_t DWORD;
+typedef uint16_t WORD;
+typedef uint8_t BYTE;
 
+void Delayms(DWORD milliseconds)
+{
+    DWORD ms;
+    DWORD count;
+
+    ms = milliseconds;
+    while (ms--)
+    {
+        count = 10;
+        while (count--);
+    }
+
+    return;
+}
+
+void onboardDemo(unsigned int delay) {
+    PORTAbits.RA1 = 1;
+    Delayms(delay);
+    PORTAbits.RA1 = 0;
+    Delayms(delay);
+}
 
 int main(int argc, char** argv) {
 
 
 
-    TRISA = 0b00111101;
+
 
     while (1) {
-        PORTAbits.RA1 = PORTAbits.RA0;
+        TRISA = 0b00111101;
+        while (PORTAbits.RA0) {
+            onboardDemo(500);
+        }
+
+        onboardDemo(50);
+
     }
-    return (0);
 }

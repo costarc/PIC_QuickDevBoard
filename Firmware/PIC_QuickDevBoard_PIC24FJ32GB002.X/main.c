@@ -97,7 +97,7 @@ void SetAllOutput() {
 }
 
 void tesfFlashAll() {
-     SetAllOutput();
+    SetAllOutput();
     _LATA0 = 1;
     _LATA1 = 1;
     _LATA2 = 1;
@@ -140,22 +140,27 @@ void tesfFlashAll() {
     Delayms(500);
 }
 
-void testPushButton() {
-    _TRISA0 = 1;
-    _TRISA1 = 0;
-    Delayms(10);
-    _RA1 = _RA0;
+void onboardDemo() {
+    _RA1 = 1;
+    Delayms(50);
+    _RA1 = 0;
+    Delayms(50);
 }
 
 int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
-   
-     
+    SetAllOutput();
+    
     while (1) {
-        tesfFlashAll();
-        //testPushButton();
+        _TRISA0 = 1;
+        while (_RA0) {
+            tesfFlashAll();
+        }
+        
+        onboardDemo();
+        
     }
 
     return 1;

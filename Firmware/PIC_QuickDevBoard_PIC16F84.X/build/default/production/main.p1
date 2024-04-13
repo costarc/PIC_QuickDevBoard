@@ -1,9 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"454 C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 454: extern volatile unsigned char TRISA __attribute__((address(0x085)));
-[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
-"172
+"172 C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
 [; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 172:     struct {
 [s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S12 . RA0 RA1 RA2 RA3 RA4 ]
@@ -14,6 +10,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "180
 [; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 180: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
 [v _PORTAbits `VS11 ~T0 @X0 0 e@5 ]
+[p mainexit ]
+"454
+[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 454: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
 "54 C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
 [; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -62,36 +62,125 @@ Version 4.0 HI-TECH Software Intermediate Code
 "606
 [; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 606: __asm("EECON2 equ 089h");
 [; <" EECON2 equ 089h ;# ">
+"17 main.c
+[; ;main.c: 17: void Delayms(DWORD milliseconds)
+[v _Delayms `(v ~T0 @X0 1 ef1`ul ]
+"18
+[; ;main.c: 18: {
+{
+[e :U _Delayms ]
+"17
+[; ;main.c: 17: void Delayms(DWORD milliseconds)
+[v _milliseconds `ul ~T0 @X0 1 r1 ]
+"18
+[; ;main.c: 18: {
+[f ]
+"19
+[; ;main.c: 19:     DWORD ms;
+[v _ms `ul ~T0 @X0 1 a ]
+"20
+[; ;main.c: 20:     DWORD count;
+[v _count `ul ~T0 @X0 1 a ]
+"22
+[; ;main.c: 22:     ms = milliseconds;
+[e = _ms _milliseconds ]
+"23
+[; ;main.c: 23:     while (ms--)
+[e $U 30  ]
+[e :U 31 ]
+"24
+[; ;main.c: 24:     {
+{
+"25
+[; ;main.c: 25:         count = 10;
+[e = _count -> -> -> 10 `i `l `ul ]
+"26
+[; ;main.c: 26:         while (count--);
+[e $U 33  ]
+[e :U 34 ]
+[e :U 33 ]
+[e $ != -- _count -> -> -> 1 `i `l `ul -> -> -> 0 `i `l `ul 34  ]
+[e :U 35 ]
+"27
+[; ;main.c: 27:     }
+}
+[e :U 30 ]
+"23
+[; ;main.c: 23:     while (ms--)
+[e $ != -- _ms -> -> -> 1 `i `l `ul -> -> -> 0 `i `l `ul 31  ]
+[e :U 32 ]
+"29
+[; ;main.c: 29:     return;
+[e $UE 29  ]
+"30
+[; ;main.c: 30: }
+[e :UE 29 ]
+}
+"32
+[; ;main.c: 32: void onboardDemo(unsigned int delay) {
+[v _onboardDemo `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _onboardDemo ]
+[v _delay `ui ~T0 @X0 1 r1 ]
+[f ]
+"33
+[; ;main.c: 33:     PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"34
+[; ;main.c: 34:     Delayms(delay);
+[e ( _Delayms (1 -> _delay `ul ]
+"35
+[; ;main.c: 35:     PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+"36
+[; ;main.c: 36:     Delayms(delay);
+[e ( _Delayms (1 -> _delay `ul ]
+"37
+[; ;main.c: 37: }
+[e :UE 36 ]
+}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"15 main.c
-[; ;main.c: 15: int main(int argc, char** argv) {
+"39
+[; ;main.c: 39: int main(int argc, char** argv) {
 [v _main `(i ~T0 @X0 1 ef2`i`**uc ]
 {
 [e :U _main ]
 [v _argc `i ~T0 @X0 1 r1 ]
 [v _argv `**uc ~T0 @X0 1 r2 ]
 [f ]
-"19
-[; ;main.c: 19:     TRISA = 0b00111101;
-[e = _TRISA -> -> 61 `i `uc ]
-"21
-[; ;main.c: 21:     while (1) {
-[e :U 31 ]
+"45
+[; ;main.c: 45:     while (1) {
+[e :U 39 ]
 {
-"22
-[; ;main.c: 22:         PORTAbits.RA1 = PORTAbits.RA0;
-[e = . . _PORTAbits 0 1 . . _PORTAbits 0 0 ]
-"23
-[; ;main.c: 23:     }
+"46
+[; ;main.c: 46:         TRISA = 0b00111101;
+[e = _TRISA -> -> 61 `i `uc ]
+"47
+[; ;main.c: 47:         while (PORTAbits.RA0) {
+[e $U 41  ]
+[e :U 42 ]
+{
+"48
+[; ;main.c: 48:             onboardDemo(500);
+[e ( _onboardDemo (1 -> -> 500 `i `ui ]
+"49
+[; ;main.c: 49:         }
 }
-[e :U 30 ]
-[e $U 31  ]
-[e :U 32 ]
-"24
-[; ;main.c: 24:     return (0);
-[e ) -> 0 `i ]
-[e $UE 29  ]
-"25
-[; ;main.c: 25: }
-[e :UE 29 ]
+[e :U 41 ]
+"47
+[; ;main.c: 47:         while (PORTAbits.RA0) {
+[e $ != -> . . _PORTAbits 0 0 `i -> 0 `i 42  ]
+[e :U 43 ]
+"51
+[; ;main.c: 51:         onboardDemo(50);
+[e ( _onboardDemo (1 -> -> 50 `i `ui ]
+"53
+[; ;main.c: 53:     }
+}
+[e :U 38 ]
+[e $U 39  ]
+[e :U 40 ]
+"54
+[; ;main.c: 54: }
+[e :UE 37 ]
 }

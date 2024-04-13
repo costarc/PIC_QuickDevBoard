@@ -71,11 +71,11 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x150           0x1f8  (504)
-.text                        0x350               0x184           0x246  (582)
-.dinit                       0x4d4                0x10            0x18  (24)
-.text                        0x4e4                0x12            0x1b  (27)
+.text                        0x350               0x186           0x249  (585)
+.dinit                       0x4d6                0x10            0x18  (24)
+.text                        0x4e6                0x12            0x1b  (27)
 
-                 Total "program" memory used (bytes):          0x471  (1137) 3%
+                 Total "program" memory used (bytes):          0x474  (1140) 3%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -104,8 +104,8 @@ External Symbols in Program Memory (by address):
 
                   0x000200                  __resetPRI
                   0x00023c                  __psv_init
-                  0x000252                  __data_init_standard
                   0x000252                  __data_init
+                  0x000252                  __data_init_standard
                   0x0002c8                  __OscillatorFail
                   0x0002e8                  __StackError
                   0x00030a                  __AddressError
@@ -114,20 +114,20 @@ External Symbols in Program Memory (by address):
                   0x000350                  _Delayms
                   0x0003a8                  _SetAllOutput
                   0x0003da                  _tesfFlashAll
-                  0x00043a                  _testPushButton
-                  0x00045e                  _main
-                  0x000466                  _CLOCK_Initialize
-                  0x0004a0                  _PIN_MANAGER_Initialize
-                  0x0004e4                  _SYSTEM_Initialize
-                  0x0004f0                  _INTERRUPT_Initialize
+                  0x00043a                  _onboardDemo
+                  0x000450                  _main
+                  0x000468                  _CLOCK_Initialize
+                  0x0004a2                  _PIN_MANAGER_Initialize
+                  0x0004e6                  _SYSTEM_Initialize
+                  0x0004f2                  _INTERRUPT_Initialize
 
 External Symbols in Program Memory (by name):
 
-                  0x000466                  _CLOCK_Initialize
+                  0x000468                  _CLOCK_Initialize
                   0x000350                  _Delayms
-                  0x0004f0                  _INTERRUPT_Initialize
-                  0x0004a0                  _PIN_MANAGER_Initialize
-                  0x0004e4                  _SYSTEM_Initialize
+                  0x0004f2                  _INTERRUPT_Initialize
+                  0x0004a2                  _PIN_MANAGER_Initialize
+                  0x0004e6                  _SYSTEM_Initialize
                   0x0003a8                  _SetAllOutput
                   0x00030a                  __AddressError
                   0x00034a                  __DefaultInterrupt
@@ -138,9 +138,9 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x00045e                  _main
+                  0x000450                  _main
+                  0x00043a                  _onboardDemo
                   0x0003da                  _tesfFlashAll
-                  0x00043a                  _testPushButton
 
 Memory Configuration
 
@@ -233,14 +233,14 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x1502
+.debug_info       0x000000       0x14ff
  *(.debug_info)
  .debug_info      0x000000        0x284 build/default/production/mcc_generated_files/clock.o
  .debug_info      0x000284        0x190 build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_info      0x000414        0x330 build/default/production/mcc_generated_files/system.o
  .debug_info      0x000744        0x3bc build/default/production/mcc_generated_files/traps.o
  .debug_info      0x000b00        0x2cb build/default/production/mcc_generated_files/pin_manager.o
- .debug_info      0x000dcb        0x737 build/default/production/main.o
+ .debug_info      0x000dcb        0x734 build/default/production/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x380
@@ -253,7 +253,7 @@ __CONFIG1
  .debug_abbrev    0x0002ab          0x1 build/default/production/mcc_generated_files/mcc.o
  .debug_abbrev    0x0002ac         0xd4 build/default/production/main.o
 
-.debug_line       0x000000        0x61c
+.debug_line       0x000000        0x620
  *(.debug_line)
  .debug_line      0x000000        0x10f build/default/production/mcc_generated_files/clock.o
  .debug_line      0x00010f         0x55 build/default/production/mcc_generated_files/interrupt_manager.o
@@ -261,7 +261,7 @@ __CONFIG1
  .debug_line      0x00026f        0x139 build/default/production/mcc_generated_files/traps.o
  .debug_line      0x0003a8        0x115 build/default/production/mcc_generated_files/pin_manager.o
  .debug_line      0x0004bd         0x1a build/default/production/mcc_generated_files/mcc.o
- .debug_line      0x0004d7        0x145 build/default/production/main.o
+ .debug_line      0x0004d7        0x149 build/default/production/main.o
 
 .debug_frame      0x000000        0x28e
  *(.debug_frame)
@@ -285,7 +285,7 @@ __CONFIG1
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000        0x172
+                  0x000000        0x16f
  *(.debug_pubnames)
  .debug_pubnames
                   0x000000         0x27 build/default/production/mcc_generated_files/clock.o
@@ -298,7 +298,7 @@ __CONFIG1
  .debug_pubnames
                   0x0000e9         0x2d build/default/production/mcc_generated_files/pin_manager.o
  .debug_pubnames
-                  0x000116         0x5c build/default/production/main.o
+                  0x000116         0x59 build/default/production/main.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -1222,25 +1222,25 @@ __c30_signature
  .ivt._MathError
                   0x00000c          0x2 build/default/production/mcc_generated_files/traps.o
 
-.text             0x000350        0x184
- .text            0x000350        0x116 build/default/production/main.o
+.text             0x000350        0x186
+ .text            0x000350        0x118 build/default/production/main.o
                   0x000350                  _Delayms
                   0x0003a8                  _SetAllOutput
                   0x0003da                  _tesfFlashAll
-                  0x00043a                  _testPushButton
-                  0x00045e                  _main
- .text            0x000466         0x3a build/default/production/mcc_generated_files/clock.o
-                  0x000466                  _CLOCK_Initialize
- .text            0x0004a0         0x1c build/default/production/mcc_generated_files/pin_manager.o
-                  0x0004a0                  _PIN_MANAGER_Initialize
- .text            0x0004bc         0x18 build/default/production/mcc_generated_files/traps.o
-                  0x0004bc                  _TRAPS_halt_on_error
+                  0x00043a                  _onboardDemo
+                  0x000450                  _main
+ .text            0x000468         0x3a build/default/production/mcc_generated_files/clock.o
+                  0x000468                  _CLOCK_Initialize
+ .text            0x0004a2         0x1c build/default/production/mcc_generated_files/pin_manager.o
+                  0x0004a2                  _PIN_MANAGER_Initialize
+ .text            0x0004be         0x18 build/default/production/mcc_generated_files/traps.o
+                  0x0004be                  _TRAPS_halt_on_error
 
-.dinit            0x0004d4         0x10
- .dinit           0x0004d4         0x10 data_init
+.dinit            0x0004d6         0x10
+ .dinit           0x0004d6         0x10 data_init
 
-.text             0x0004e4         0x12
- .text            0x0004e4          0xc build/default/production/mcc_generated_files/system.o
-                  0x0004e4                  _SYSTEM_Initialize
- .text            0x0004f0          0x6 build/default/production/mcc_generated_files/interrupt_manager.o
-                  0x0004f0                  _INTERRUPT_Initialize
+.text             0x0004e6         0x12
+ .text            0x0004e6          0xc build/default/production/mcc_generated_files/system.o
+                  0x0004e6                  _SYSTEM_Initialize
+ .text            0x0004f2          0x6 build/default/production/mcc_generated_files/interrupt_manager.o
+                  0x0004f2                  _INTERRUPT_Initialize

@@ -1,11 +1,15 @@
 # PIC_QuickDevBoard
 Small and simple PIC16F85 &amp; PIC24FJ Development Board with Programming Support for PICKit
 
+Rev 2.1
+- Updated footprint for USB-Micro to move it to the comopnent side (vcc - gnd was inverted)
+
 Rev 2.0
+- Initial production version
 
 Fabrication
 -----------
-Measures: 61.65 x 65.54
+Measures: 70.87 x 81.29
 
 Usage
 -----
@@ -44,4 +48,8 @@ LED is connected to RA1
 
 These components can be removed from the board if they are not needed or if they interfere with normal operation of these signals in the Pin Headers.
 
-
+Default Demonstration Firmware
+------------------------------
+The default firmware (in folder Firmware\PIC_QuickDevBoard_<PIC Model>\dist\default\production\) blinks the onboard LED and also all PORTs in the breakout headers. The blink is done every half second.
+When the push button (RA0) is pressed, the onboard LED will blink every 10 ms, and all the other outputs (blonks) are stopped.
+To see the signal (blink leds) on all PORTs, connect a led using wire jumpers to each pin in the breakout (do not forget to connect the gnd to the other pin in the LED).
