@@ -3,6 +3,8 @@ Small and simple PIC16F85 &amp; PIC24FJ Development Board with Programming Suppo
 
 Rev 2.1
 - Updated footprint for USB-Micro to move it to the comopnent side (vcc - gnd was inverted)
+- Fix for 5V PICs (16F) with addtion o extra jumpers
+- Inverted PICKIT pin header for better alignment (cosmetic change)
 
 Rev 2.0
 - Initial production version
