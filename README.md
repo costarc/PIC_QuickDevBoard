@@ -11,7 +11,7 @@ Rev 2.0
 
 Fabrication
 -----------
-Measures: 70.87 x 81.29
+Measures: 70.90 x 81.30
 
 Usage
 -----
