@@ -1,4 +1,4 @@
-<config configName="default" projectName="GPIO_Tests" configVersion="1.1" device="PIC24FJ32GB002" deviceLibraryClass="com.microchip.mcc.mcu16.Mcu16PeripheralLibrary" coreVersion="5.6.1">
+<config configName="default" projectName="PIC_QuickDevBoard_PIC24FJ32GB002" configVersion="1.1" device="PIC24FJ32GB002" deviceLibraryClass="com.microchip.mcc.mcu16.Mcu16PeripheralLibrary" coreVersion="5.6.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
