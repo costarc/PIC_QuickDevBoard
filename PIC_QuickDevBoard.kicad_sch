@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "PIC24 & PIC16F84 Programmer & Dev Board")
-		(date "2024-04-13")
-		(rev "2.1")
+		(date "2024-05-01")
+		(rev "2.2")
 		(company "RCC 2024")
 		(comment 1 "https://github.com/costarc/PIC_QuickDevBoard")
 	)
@@ -6186,6 +6186,28 @@
 			)
 		)
 	)
+	(global_label "RC0"
+		(shape input)
+		(at 341.63 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0664a31d-1da1-4865-97be-8e34b796b285")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 348.3647 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RB5"
 		(shape bidirectional)
 		(at 119.4867 115.5838 0)
@@ -6485,6 +6507,28 @@
 		(uuid "20a139f8-781e-43b5-b570-8cccace24ae5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 142.466 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RC1"
+		(shape input)
+		(at 341.63 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "218711d7-0389-44d4-b73b-ed1b57df7f22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 348.3647 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,28 +7968,6 @@
 			)
 		)
 	)
-	(global_label "RA0"
-		(shape input)
-		(at 341.63 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9f1be2a0-9e17-4d3a-ade4-e2a8a2db2397")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 348.1833 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RC0"
 		(shape bidirectional)
 		(at 396.24 102.87 180)
@@ -8575,28 +8597,6 @@
 		(uuid "e7c39a3b-234d-42d9-95c9-a872117ef923")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 227.1868 125.7053 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RA1"
-		(shape input)
-		(at 341.63 148.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e9627cc3-7087-4376-af3d-429755ff1c43")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 348.1833 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
