@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "PIC24 & PIC16F84 Programmer & Dev Board")
-		(date "2024-05-01")
-		(rev "2.2")
+		(date "2024-05-17")
+		(rev "2.3")
 		(company "RCC 2024")
 		(comment 1 "https://github.com/costarc/PIC_QuickDevBoard")
 	)
@@ -9184,7 +9184,7 @@
 				)
 			)
 		)
-		(property "Value" "270"
+		(property "Value" "10K"
 			(at 180.2756 98.4066 90)
 			(effects
 				(font
@@ -11486,7 +11486,7 @@
 				)
 			)
 		)
-		(property "Value" "270"
+		(property "Value" "470R"
 			(at 230.4591 209.823 90)
 			(effects
 				(font

@@ -1,6 +1,15 @@
 # PIC_QuickDevBoard
 Small and simple PIC16F85 &amp; PIC24FJ Development Board with Programming Support for PICKit
 
+Rev 2.3
+- Added missing terminals in the mini-usb custom footprint
+- Changed LED resistor from 270R to 470R to avoid led light too bright
+- Changed PIC16F84 /MCLR pull-up resistor from 270R to 10K
+
+Rev 2.2
+- Adjustments to mini-usb footprint
+- Fixed power rails to PC16F145X that was not allowing programming the microcontroller
+
 Rev 2.1
 - Updated footprint for USB-Micro to move it to the comopnent side (vcc - gnd was inverted)
 - Fix for 5V PICs (16F) with addtion o extra jumpers
