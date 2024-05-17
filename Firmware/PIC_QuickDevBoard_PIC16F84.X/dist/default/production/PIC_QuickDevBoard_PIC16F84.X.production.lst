@@ -1,96 +1,96 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Thu Apr 11 18:20:43 2024
+                                                                                               Thu May 16 23:53:28 2024
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	16F84A
      2                           	pagewidth 120
      3                           	opt	flic
      4                           	psect	cinit,global,class=CODE,merge=1,delta=2
-     5                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1,noexec
-     6                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1,noexec
-     7                           	psect	maintext,global,class=CODE,split=1,delta=2
-     8                           	psect	text1,local,class=CODE,merge=1,delta=2
-     9                           	psect	text2,local,class=CODE,merge=1,delta=2
-    10                           	dabs	1,0x4E,2
-    11     0000                     
-    12                           ; Generated 22/03/2023 GMT
-    13                           ; 
-    14                           ; Copyright © 2023, Microchip Technology Inc. and its subsidiaries ("Microchip")
-    15                           ; All rights reserved.
-    16                           ; 
-    17                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+     5                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1,noexec
+     6                           	psect	maintext,global,class=CODE,split=1,delta=2
+     7                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=2,noexec
+     8                           	dabs	1,0x4E,2
+     9     0000                     
+    10                           ; Generated 22/03/2023 GMT
+    11                           ; 
+    12                           ; Copyright © 2023, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    13                           ; All rights reserved.
+    14                           ; 
+    15                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
       +                          ip").
-    18                           ; 
-    19                           ; Redistribution and use in source and binary forms, with or without modification, are
-    20                           ; permitted provided that the following conditions are met:
-    21                           ; 
-    22                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+    16                           ; 
+    17                           ; Redistribution and use in source and binary forms, with or without modification, are
+    18                           ; permitted provided that the following conditions are met:
+    19                           ; 
+    20                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
       +                          t of
-    23                           ;        conditions and the following disclaimer.
-    24                           ; 
-    25                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+    21                           ;        conditions and the following disclaimer.
+    22                           ; 
+    23                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
       +                          list
-    26                           ;        of conditions and the following disclaimer in the documentation and/or other
-    27                           ;        materials provided with the distribution. Publication is not required when
-    28                           ;        this file is used in an embedded application.
-    29                           ; 
-    30                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+    24                           ;        of conditions and the following disclaimer in the documentation and/or other
+    25                           ;        materials provided with the distribution. Publication is not required when
+    26                           ;        this file is used in an embedded application.
+    27                           ; 
+    28                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
       +                          is
-    31                           ;        software without specific prior written permission.
-    32                           ; 
-    33                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
-    34                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+    29                           ;        software without specific prior written permission.
+    30                           ; 
+    31                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    32                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
       +                          OR
-    35                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+    33                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
       +                          T,
-    36                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
-    37                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
-    38                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+    34                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    35                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    36                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
       +                          RICT
-    39                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+    37                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
       +                          SE OF
-    40                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    41                           ; 
+    38                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    39                           ; 
+    40                           ; 
+    41                           ; Code-generator required, PIC16F84A Definitions
     42                           ; 
-    43                           ; Code-generator required, PIC16F84A Definitions
-    44                           ; 
-    45                           ; SFR Addresses
-    46     0000                     	;# 
-    47     0001                     	;# 
-    48     0002                     	;# 
-    49     0003                     	;# 
-    50     0004                     	;# 
-    51     0005                     	;# 
-    52     0006                     	;# 
-    53     0008                     	;# 
-    54     0009                     	;# 
-    55     000A                     	;# 
-    56     000B                     	;# 
-    57     0081                     	;# 
-    58     0085                     	;# 
-    59     0086                     	;# 
-    60     0088                     	;# 
-    61     0089                     	;# 
-    62     0000                     	;# 
-    63     0001                     	;# 
-    64     0002                     	;# 
-    65     0003                     	;# 
-    66     0004                     	;# 
-    67     0005                     	;# 
-    68     0006                     	;# 
-    69     0008                     	;# 
-    70     0009                     	;# 
-    71     000A                     	;# 
-    72     000B                     	;# 
-    73     0081                     	;# 
-    74     0085                     	;# 
-    75     0086                     	;# 
-    76     0088                     	;# 
-    77     0089                     	;# 
-    78     0005                     _PORTAbits	set	5
-    79     0085                     _TRISA	set	133
+    43                           ; SFR Addresses
+    44     0000                     	;# 
+    45     0001                     	;# 
+    46     0002                     	;# 
+    47     0003                     	;# 
+    48     0004                     	;# 
+    49     0005                     	;# 
+    50     0006                     	;# 
+    51     0008                     	;# 
+    52     0009                     	;# 
+    53     000A                     	;# 
+    54     000B                     	;# 
+    55     0081                     	;# 
+    56     0085                     	;# 
+    57     0086                     	;# 
+    58     0088                     	;# 
+    59     0089                     	;# 
+    60     0000                     	;# 
+    61     0001                     	;# 
+    62     0002                     	;# 
+    63     0003                     	;# 
+    64     0004                     	;# 
+    65     0005                     	;# 
+    66     0006                     	;# 
+    67     0008                     	;# 
+    68     0009                     	;# 
+    69     000A                     	;# 
+    70     000B                     	;# 
+    71     0081                     	;# 
+    72     0085                     	;# 
+    73     0086                     	;# 
+    74     0088                     	;# 
+    75     0089                     	;# 
+    76     0028                     _RA0	set	40
+    77     0029                     _RA1	set	41
+    78     0429                     _TRISA1	set	1065
+    79     0428                     _TRISA0	set	1064
     80                           
     81                           	psect	cinit
     82     03FE                     start_initialization:	
@@ -102,389 +102,177 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
     88                           
     89     03FE                     __end_of__initialization:
     90     03FE  0183               	clrf	3
-    91     03FF  2B7F               	ljmp	_main	;jump to C main() function
+    91     03FF  2BB5               	ljmp	_main	;jump to C main() function
     92                           
-    93                           	psect	cstackCOMMON
-    94     0000                     __pcstackCOMMON:
-    95     0000                     ??_onboardDemo:
-    96     0000                     ??_main:	
+    93                           	psect	cstackBANK0
+    94     000C                     __pcstackBANK0:
+    95     000C                     ?_main:
+    96     000C                     ??_main:	
     97                           ; 1 bytes @ 0x0
     98                           
     99                           
-   100                           	psect	cstackBANK0
-   101     000C                     __pcstackBANK0:	
-   102                           ; 1 bytes @ 0x0
-   103                           
-   104     000C                     ?_Delayms:
-   105     000C                     Delayms@milliseconds:	
-   106                           ; 1 bytes @ 0x0
-   107                           
-   108                           
-   109                           ; 4 bytes @ 0x0
-   110     000C                     	ds	4
-   111     0010                     ??_Delayms:
-   112                           
-   113                           ; 1 bytes @ 0x4
-   114     0010                     	ds	4
-   115     0014                     Delayms@ms:
-   116                           
-   117                           ; 4 bytes @ 0x8
-   118     0014                     	ds	4
-   119     0018                     Delayms@count:
-   120                           
-   121                           ; 4 bytes @ 0xC
-   122     0018                     	ds	4
-   123     001C                     ?_onboardDemo:
-   124     001C                     onboardDemo@delay:	
-   125                           ; 1 bytes @ 0x10
-   126                           
-   127                           
-   128                           ; 2 bytes @ 0x10
-   129     001C                     	ds	2
-   130     001E                     ?_main:
-   131     001E                     main@argc:	
-   132                           ; 2 bytes @ 0x12
-   133                           
-   134                           
-   135                           ; 2 bytes @ 0x12
-   136     001E                     	ds	2
-   137     0020                     main@argv:
+   100                           ; 1 bytes @ 0x0
+   101     000C                     	ds	3
+   102                           
+   103                           	psect	maintext
+   104     03B5                     __pmaintext:	
+   105 ;;
+   106 ;;Main: autosize = 0, tempsize = 3, incstack = 0, save=0
+   107 ;;
+   108 ;; *************** function _main *****************
+   109 ;; Defined at:
+   110 ;;		line 12 in file "main.c"
+   111 ;; Parameters:    Size  Location     Type
+   112 ;;		None
+   113 ;; Auto vars:     Size  Location     Type
+   114 ;;  delay           2    0        int 
+   115 ;; Return value:  Size  Location     Type
+   116 ;;                  1    wreg      void 
+   117 ;; Registers used:
+   118 ;;		wreg
+   119 ;; Tracked objects:
+   120 ;;		On entry : B00/0
+   121 ;;		On exit  : 0/0
+   122 ;;		Unchanged: 0/0
+   123 ;; Data sizes:     COMMON   BANK0
+   124 ;;      Params:         0       0
+   125 ;;      Locals:         0       0
+   126 ;;      Temps:          0       3
+   127 ;;      Totals:         0       3
+   128 ;;Total ram usage:        3 bytes
+   129 ;; This function calls:
+   130 ;;		Nothing
+   131 ;; This function is called by:
+   132 ;;		Startup code after reset
+   133 ;; This function uses a non-reentrant model
+   134 ;;
+   135                           
+   136     03B5                     _main:	
+   137                           ;psect for function _main
    138                           
-   139                           ; 2 bytes @ 0x14
-   140     0020                     	ds	2
-   141                           
-   142                           	psect	maintext
-   143     037F                     __pmaintext:	
-   144 ;;
-   145 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
-   146 ;;
-   147 ;; *************** function _main *****************
-   148 ;; Defined at:
-   149 ;;		line 39 in file "main.c"
-   150 ;; Parameters:    Size  Location     Type
-   151 ;;  argc            2   18[BANK0 ] int 
-   152 ;;  argv            2   20[BANK0 ] PTR PTR unsigned char 
-   153 ;; Auto vars:     Size  Location     Type
-   154 ;;		None
-   155 ;; Return value:  Size  Location     Type
-   156 ;;                  2   18[BANK0 ] int 
-   157 ;; Registers used:
-   158 ;;		wreg, status,2, status,0, pclath, cstack
-   159 ;; Tracked objects:
-   160 ;;		On entry : B00/0
-   161 ;;		On exit  : 0/0
-   162 ;;		Unchanged: 0/0
-   163 ;; Data sizes:     COMMON   BANK0
-   164 ;;      Params:         0       4
-   165 ;;      Locals:         0       0
-   166 ;;      Temps:          0       0
-   167 ;;      Totals:         0       4
-   168 ;;Total ram usage:        4 bytes
-   169 ;; Hardware stack levels required when called: 2
-   170 ;; This function calls:
-   171 ;;		_onboardDemo
-   172 ;; This function is called by:
-   173 ;;		Startup code after reset
-   174 ;; This function uses a non-reentrant model
-   175 ;;
-   176                           
-   177     037F                     _main:	
-   178                           ;psect for function _main
-   179                           
-   180     037F                     l21:	
-   181                           ;incstack = 0
-   182                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
-   183                           ;main.c: 45:     while (1) {
-   184                           
-   185     037F                     l607:
-   186                           
-   187                           ;main.c: 46:         TRISA = 0b00111101;
-   188     037F  303D               	movlw	61
-   189     0380  1683               	bsf	3,5	;RP0=1, select bank1
-   190     0381  0085               	movwf	5	;volatile
-   191                           
-   192                           ;main.c: 47:         while (PORTAbits.RA0) {
-   193     0382  2B88               	goto	l611
-   194     0383                     l609:
-   195                           
-   196                           ;main.c: 48:             onboardDemo(500);
-   197     0383  30F4               	movlw	244
-   198     0384  009C               	movwf	onboardDemo@delay
-   199     0385  3001               	movlw	1
-   200     0386  009D               	movwf	onboardDemo@delay+1
-   201     0387  236C               	fcall	_onboardDemo
-   202     0388                     l611:
-   203                           
-   204                           ;main.c: 47:         while (PORTAbits.RA0) {
-   205     0388  1283               	bcf	3,5	;RP0=0, select bank0
-   206     0389  1805               	btfsc	5,0	;volatile
-   207     038A  2B8C               	goto	u101
-   208     038B  2B8D               	goto	u100
-   209     038C                     u101:
-   210     038C  2B83               	goto	l609
-   211     038D                     u100:
-   212     038D                     l613:
-   213                           
-   214                           ;main.c: 51:         onboardDemo(50);
-   215     038D  3032               	movlw	50
-   216     038E  009C               	movwf	onboardDemo@delay
-   217     038F  3000               	movlw	0
-   218     0390  009D               	movwf	onboardDemo@delay+1
-   219     0391  236C               	fcall	_onboardDemo
-   220     0392  2B7F               	goto	l21
-   221     0393  2800               	ljmp	start
-   222     0394                     __end_of_main:
-   223                           
-   224                           	psect	text1
-   225     036C                     __ptext1:	
-   226 ;; *************** function _onboardDemo *****************
-   227 ;; Defined at:
-   228 ;;		line 32 in file "main.c"
-   229 ;; Parameters:    Size  Location     Type
-   230 ;;  delay           2   16[BANK0 ] unsigned int 
-   231 ;; Auto vars:     Size  Location     Type
-   232 ;;		None
-   233 ;; Return value:  Size  Location     Type
-   234 ;;                  1    wreg      void 
-   235 ;; Registers used:
-   236 ;;		wreg, status,2, status,0, pclath, cstack
-   237 ;; Tracked objects:
-   238 ;;		On entry : 0/0
-   239 ;;		On exit  : 0/0
-   240 ;;		Unchanged: 0/0
-   241 ;; Data sizes:     COMMON   BANK0
-   242 ;;      Params:         0       2
-   243 ;;      Locals:         0       0
-   244 ;;      Temps:          0       0
-   245 ;;      Totals:         0       2
-   246 ;;Total ram usage:        2 bytes
-   247 ;; Hardware stack levels used: 1
-   248 ;; Hardware stack levels required when called: 1
-   249 ;; This function calls:
-   250 ;;		_Delayms
-   251 ;; This function is called by:
-   252 ;;		_main
-   253 ;; This function uses a non-reentrant model
-   254 ;;
-   255                           
-   256     036C                     _onboardDemo:	
-   257                           ;psect for function _onboardDemo
-   258                           
-   259     036C                     l601:	
-   260                           ;incstack = 0
-   261                           ; Regs used in _onboardDemo: [wreg+status,2+status,0+pclath+cstack]
-   262                           
-   263                           
-   264                           ;main.c: 33:     PORTAbits.RA1 = 1;
-   265     036C  1283               	bcf	3,5	;RP0=0, select bank0
-   266     036D  1485               	bsf	5,1	;volatile
-   267     036E                     l603:
-   268                           
-   269                           ;main.c: 34:     Delayms(delay);
-   270     036E  081C               	movf	onboardDemo@delay,w
-   271     036F  008C               	movwf	Delayms@milliseconds
-   272     0370  081D               	movf	onboardDemo@delay+1,w
-   273     0371  008D               	movwf	Delayms@milliseconds+1
-   274     0372  018E               	clrf	Delayms@milliseconds+2
-   275     0373  018F               	clrf	Delayms@milliseconds+3
-   276     0374  2394               	fcall	_Delayms
-   277     0375                     l605:
-   278                           
-   279                           ;main.c: 35:     PORTAbits.RA1 = 0;
-   280     0375  1283               	bcf	3,5	;RP0=0, select bank0
-   281     0376  1085               	bcf	5,1	;volatile
-   282                           
-   283                           ;main.c: 36:     Delayms(delay);
-   284     0377  081C               	movf	onboardDemo@delay,w
-   285     0378  008C               	movwf	Delayms@milliseconds
-   286     0379  081D               	movf	onboardDemo@delay+1,w
-   287     037A  008D               	movwf	Delayms@milliseconds+1
-   288     037B  018E               	clrf	Delayms@milliseconds+2
-   289     037C  018F               	clrf	Delayms@milliseconds+3
-   290     037D  2394               	fcall	_Delayms
-   291     037E                     l16:
-   292     037E  0008               	return
-   293     037F                     __end_of_onboardDemo:
-   294                           
-   295                           	psect	text2
-   296     0394                     __ptext2:	
-   297 ;; *************** function _Delayms *****************
-   298 ;; Defined at:
-   299 ;;		line 17 in file "main.c"
-   300 ;; Parameters:    Size  Location     Type
-   301 ;;  milliseconds    4    0[BANK0 ] unsigned long 
-   302 ;; Auto vars:     Size  Location     Type
-   303 ;;  count           4   12[BANK0 ] unsigned long 
-   304 ;;  ms              4    8[BANK0 ] unsigned long 
-   305 ;; Return value:  Size  Location     Type
-   306 ;;                  1    wreg      void 
-   307 ;; Registers used:
-   308 ;;		wreg, status,2, status,0
-   309 ;; Tracked objects:
-   310 ;;		On entry : 0/0
-   311 ;;		On exit  : 0/0
-   312 ;;		Unchanged: 0/0
-   313 ;; Data sizes:     COMMON   BANK0
-   314 ;;      Params:         0       4
-   315 ;;      Locals:         0       8
-   316 ;;      Temps:          0       4
-   317 ;;      Totals:         0      16
-   318 ;;Total ram usage:       16 bytes
-   319 ;; Hardware stack levels used: 1
-   320 ;; This function calls:
-   321 ;;		Nothing
-   322 ;; This function is called by:
-   323 ;;		_onboardDemo
-   324 ;; This function uses a non-reentrant model
-   325 ;;
-   326                           
-   327     0394                     _Delayms:	
-   328                           ;psect for function _Delayms
-   329                           
-   330     0394                     l593:	
-   331                           ;incstack = 0
-   332                           ; Regs used in _Delayms: [wreg+status,2+status,0]
-   333                           
-   334                           
-   335                           ;main.c: 17: void Delayms(DWORD milliseconds);main.c: 18: {;main.c: 19:     DWORD ms;;ma
-      +                          in.c: 20:     DWORD count;;main.c: 22:     ms = milliseconds;
-   336     0394  1283               	bcf	3,5	;RP0=0, select bank0
-   337     0395  080F               	movf	Delayms@milliseconds+3,w
-   338     0396  0097               	movwf	Delayms@ms+3
-   339     0397  080E               	movf	Delayms@milliseconds+2,w
-   340     0398  0096               	movwf	Delayms@ms+2
-   341     0399  080D               	movf	Delayms@milliseconds+1,w
-   342     039A  0095               	movwf	Delayms@ms+1
-   343     039B  080C               	movf	Delayms@milliseconds,w
-   344     039C  0094               	movwf	Delayms@ms
-   345                           
-   346                           ;main.c: 23:     while (ms--)
-   347     039D  2BD2               	goto	l599
-   348     039E                     l595:
-   349                           
-   350                           ;main.c: 24:     {;main.c: 25:         count = 10;
-   351     039E  3000               	movlw	0
-   352     039F  1283               	bcf	3,5	;RP0=0, select bank0
-   353     03A0  009B               	movwf	Delayms@count+3
-   354     03A1  3000               	movlw	0
-   355     03A2  009A               	movwf	Delayms@count+2
-   356     03A3  3000               	movlw	0
-   357     03A4  0099               	movwf	Delayms@count+1
-   358     03A5  300A               	movlw	10
-   359     03A6  0098               	movwf	Delayms@count
-   360     03A7                     l597:	
-   361                           ;main.c: 26:         while (count--);
-   362                           
-   363     03A7  3001               	movlw	1
-   364     03A8  1283               	bcf	3,5	;RP0=0, select bank0
-   365     03A9  0090               	movwf	??_Delayms
-   366     03AA  3000               	movlw	0
-   367     03AB  0091               	movwf	??_Delayms+1
-   368     03AC  3000               	movlw	0
-   369     03AD  0092               	movwf	??_Delayms+2
-   370     03AE  3000               	movlw	0
-   371     03AF  0093               	movwf	??_Delayms+3
-   372     03B0  0810               	movf	??_Delayms,w
-   373     03B1  0298               	subwf	Delayms@count,f
-   374     03B2  0811               	movf	??_Delayms+1,w
-   375     03B3  1C03               	skipc
-   376     03B4  0F11               	incfsz	??_Delayms+1,w
-   377     03B5  2BB7               	goto	u65
-   378     03B6  2BB8               	goto	u66
-   379     03B7                     u65:
-   380     03B7  0299               	subwf	Delayms@count+1,f
-   381     03B8                     u66:
-   382     03B8  0812               	movf	??_Delayms+2,w
-   383     03B9  1C03               	skipc
-   384     03BA  0F12               	incfsz	??_Delayms+2,w
-   385     03BB  2BBD               	goto	u67
-   386     03BC  2BBE               	goto	u68
-   387     03BD                     u67:
-   388     03BD  029A               	subwf	Delayms@count+2,f
-   389     03BE                     u68:
-   390     03BE  0813               	movf	??_Delayms+3,w
-   391     03BF  1C03               	skipc
-   392     03C0  0F13               	incfsz	??_Delayms+3,w
-   393     03C1  2BC3               	goto	u69
-   394     03C2  2BC4               	goto	u60
-   395     03C3                     u69:
-   396     03C3  029B               	subwf	Delayms@count+3,f
-   397     03C4                     u60:
-   398     03C4  0A18               	incf	Delayms@count,w
-   399     03C5  1D03               	skipz
-   400     03C6  2BD1               	goto	u71
-   401     03C7  0A19               	incf	Delayms@count+1,w
-   402     03C8  1D03               	skipz
-   403     03C9  2BD1               	goto	u71
-   404     03CA  0A1A               	incf	Delayms@count+2,w
-   405     03CB  1D03               	skipz
-   406     03CC  2BD1               	goto	u71
-   407     03CD  0A1B               	incf	Delayms@count+3,w
-   408     03CE  1D03               	btfss	3,2
-   409     03CF  2BD1               	goto	u71
-   410     03D0  2BD2               	goto	u70
-   411     03D1                     u71:
-   412     03D1  2BA7               	goto	l597
-   413     03D2                     u70:
-   414     03D2                     l599:
-   415                           
-   416                           ;main.c: 23:     while (ms--)
-   417     03D2  3001               	movlw	1
-   418     03D3  1283               	bcf	3,5	;RP0=0, select bank0
-   419     03D4  0090               	movwf	??_Delayms
-   420     03D5  3000               	movlw	0
-   421     03D6  0091               	movwf	??_Delayms+1
-   422     03D7  3000               	movlw	0
-   423     03D8  0092               	movwf	??_Delayms+2
-   424     03D9  3000               	movlw	0
-   425     03DA  0093               	movwf	??_Delayms+3
-   426     03DB  0810               	movf	??_Delayms,w
-   427     03DC  0294               	subwf	Delayms@ms,f
-   428     03DD  0811               	movf	??_Delayms+1,w
-   429     03DE  1C03               	skipc
-   430     03DF  0F11               	incfsz	??_Delayms+1,w
-   431     03E0  2BE2               	goto	u85
-   432     03E1  2BE3               	goto	u86
-   433     03E2                     u85:
-   434     03E2  0295               	subwf	Delayms@ms+1,f
-   435     03E3                     u86:
-   436     03E3  0812               	movf	??_Delayms+2,w
-   437     03E4  1C03               	skipc
-   438     03E5  0F12               	incfsz	??_Delayms+2,w
-   439     03E6  2BE8               	goto	u87
-   440     03E7  2BE9               	goto	u88
-   441     03E8                     u87:
-   442     03E8  0296               	subwf	Delayms@ms+2,f
-   443     03E9                     u88:
-   444     03E9  0813               	movf	??_Delayms+3,w
-   445     03EA  1C03               	skipc
-   446     03EB  0F13               	incfsz	??_Delayms+3,w
-   447     03EC  2BEE               	goto	u89
-   448     03ED  2BEF               	goto	u80
-   449     03EE                     u89:
-   450     03EE  0297               	subwf	Delayms@ms+3,f
-   451     03EF                     u80:
-   452     03EF  0A14               	incf	Delayms@ms,w
-   453     03F0  1D03               	skipz
-   454     03F1  2BFC               	goto	u91
-   455     03F2  0A15               	incf	Delayms@ms+1,w
-   456     03F3  1D03               	skipz
-   457     03F4  2BFC               	goto	u91
-   458     03F5  0A16               	incf	Delayms@ms+2,w
-   459     03F6  1D03               	skipz
-   460     03F7  2BFC               	goto	u91
-   461     03F8  0A17               	incf	Delayms@ms+3,w
-   462     03F9  1D03               	btfss	3,2
-   463     03FA  2BFC               	goto	u91
-   464     03FB  2BFD               	goto	u90
-   465     03FC                     u91:
-   466     03FC  2B9E               	goto	l595
-   467     03FD                     u90:
-   468     03FD                     l13:
-   469     03FD  0008               	return
-   470     03FE                     __end_of_Delayms:
-   471     004E                     btemp	set	78	;btemp
-   472     004E                     wtemp0	set	78
+   139     03B5                     l586:	
+   140                           ;incstack = 0
+   141                           ; Regs used in _main: [wreg]
+   142                           
+   143                           
+   144                           ;main.c: 13:         else
+   145     03B5  1683               	bsf	3,5	;RP0=1, select bank1
+   146     03B6  1405               	bsf	5,0	;volatile
+   147                           
+   148                           ;main.c: 14:             _delay((unsigned long)((500)*(9804000/4000.0)));
+   149     03B7  1085               	bcf	5,1	;volatile
+   150                           
+   151                           ;main.c: 15: 
+   152     03B8  1283               	bcf	3,5	;RP0=0, select bank0
+   153     03B9  1085               	bcf	5,1	;volatile
+   154     03BA                     l588:
+   155     03BA                     l590:
+   156                           
+   157                           ;main.c: 19:         else
+   158     03BA  1283               	bcf	3,5	;RP0=0, select bank0
+   159     03BB  1485               	bsf	5,1	;volatile
+   160     03BC                     l592:
+   161                           
+   162                           ;main.c: 20:             _delay((unsigned long)((500)*(9804000/4000.0)));
+   163     03BC  1805               	btfsc	5,0	;volatile
+   164     03BD  2BBF               	goto	u31
+   165     03BE  2BC0               	goto	u30
+   166     03BF                     u31:
+   167     03BF  2BCE               	goto	l596
+   168     03C0                     u30:
+   169     03C0                     l594:
+   170                           
+   171                           ;main.c: 21:     }
+   172     03C0  3002               	movlw	2
+   173     03C1  008E               	movwf	??_main+2
+   174     03C2  303F               	movlw	63
+   175     03C3  008D               	movwf	??_main+1
+   176     03C4  304C               	movlw	76
+   177     03C5  008C               	movwf	??_main
+   178     03C6                     u57:
+   179     03C6  0B8C               	decfsz	??_main,f
+   180     03C7  2BC6               	goto	u57
+   181     03C8  0B8D               	decfsz	??_main+1,f
+   182     03C9  2BC6               	goto	u57
+   183     03CA  0B8E               	decfsz	??_main+2,f
+   184     03CB  2BC6               	goto	u57
+   185     03CC  0000               	nop
+   186     03CD  2BDB               	goto	l598
+   187     03CE                     l596:
+   188     03CE  3007               	movlw	7
+   189     03CF  008E               	movwf	??_main+2
+   190     03D0  3038               	movlw	56
+   191     03D1  008D               	movwf	??_main+1
+   192     03D2  3088               	movlw	136
+   193     03D3  008C               	movwf	??_main
+   194     03D4                     u67:
+   195     03D4  0B8C               	decfsz	??_main,f
+   196     03D5  2BD4               	goto	u67
+   197     03D6  0B8D               	decfsz	??_main+1,f
+   198     03D7  2BD4               	goto	u67
+   199     03D8  0B8E               	decfsz	??_main+2,f
+   200     03D9  2BD4               	goto	u67
+   201     03DA  0000               	nop
+   202     03DB                     l598:
+   203     03DB  1283               	bcf	3,5	;RP0=0, select bank0
+   204     03DC  1085               	bcf	5,1	;volatile
+   205     03DD                     l600:
+   206     03DD  1805               	btfsc	5,0	;volatile
+   207     03DE  2BE0               	goto	u41
+   208     03DF  2BE1               	goto	u40
+   209     03E0                     u41:
+   210     03E0  2BEF               	goto	l604
+   211     03E1                     u40:
+   212     03E1                     l602:
+   213     03E1  3002               	movlw	2
+   214     03E2  008E               	movwf	??_main+2
+   215     03E3  303F               	movlw	63
+   216     03E4  008D               	movwf	??_main+1
+   217     03E5  304C               	movlw	76
+   218     03E6  008C               	movwf	??_main
+   219     03E7                     u77:
+   220     03E7  0B8C               	decfsz	??_main,f
+   221     03E8  2BE7               	goto	u77
+   222     03E9  0B8D               	decfsz	??_main+1,f
+   223     03EA  2BE7               	goto	u77
+   224     03EB  0B8E               	decfsz	??_main+2,f
+   225     03EC  2BE7               	goto	u77
+   226     03ED  0000               	nop
+   227     03EE  2BBA               	goto	l590
+   228     03EF                     l604:
+   229     03EF  3007               	movlw	7
+   230     03F0  008E               	movwf	??_main+2
+   231     03F1  3038               	movlw	56
+   232     03F2  008D               	movwf	??_main+1
+   233     03F3  3088               	movlw	136
+   234     03F4  008C               	movwf	??_main
+   235     03F5                     u87:
+   236     03F5  0B8C               	decfsz	??_main,f
+   237     03F6  2BF5               	goto	u87
+   238     03F7  0B8D               	decfsz	??_main+1,f
+   239     03F8  2BF5               	goto	u87
+   240     03F9  0B8E               	decfsz	??_main+2,f
+   241     03FA  2BF5               	goto	u87
+   242     03FB  0000               	nop
+   243     03FC  2BBA               	goto	l590
+   244     03FD  2800               	ljmp	start
+   245     03FE                     __end_of_main:
+   246     004E                     btemp	set	78	;btemp
+   247     004E                     wtemp0	set	78
+   248                           
+   249                           	psect	config
+   250                           
+   251                           ;Config register CONFIG @ 0x2007
+   252                           ;	Oscillator Selection bits
+   253                           ;	FOSC = HS, HS oscillator
+   254                           ;	Watchdog Timer
+   255                           ;	WDTE = OFF, WDT disabled
+   256                           ;	Power-up Timer Enable bit
+   257                           ;	PWRTE = OFF, Power-up Timer is disabled
+   258                           ;	Code Protection bit
+   259                           ;	CP = OFF, Code protection disabled
+   260     2007                     	org	8199
+   261     2007  3FFA               	dw	16378
 
 Data Sizes:
     Strings     0
@@ -497,7 +285,7 @@ Data Sizes:
 Auto Spaces:
     Space          Size  Autos    Used
     COMMON            0      0       0
-    BANK0            66     22      22
+    BANK0            66      3       3
 
 Pointer List with Targets:
 
@@ -509,33 +297,22 @@ Critical Paths under _main in COMMON
 
 Critical Paths under _main in BANK0
 
-    _main->_onboardDemo
-    _onboardDemo->_Delayms
+    None.
 
 Call Graph Tables:
 
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (0) _main                                                 4     0      4     416
-                                             18 BANK0      4     0      4
-                        _onboardDemo
+ (0) _main                                                 5     5      0       1
+                                              0 BANK0      3     3      0
  ---------------------------------------------------------------------------------
- (1) _onboardDemo                                          2     0      2     416
-                                             16 BANK0      2     0      2
-                            _Delayms
- ---------------------------------------------------------------------------------
- (2) _Delayms                                             16    12      4     220
-                                              0 BANK0     16    12      4
- ---------------------------------------------------------------------------------
- Estimated maximum stack depth 2
+ Estimated maximum stack depth 0
  ---------------------------------------------------------------------------------
 
  Call Graph Graphs:
 
  _main (ROOT)
-   _onboardDemo
-     _Delayms
 
  Address spaces:
 Name               Size   Autos  Total    Cost      Usage
@@ -549,34 +326,25 @@ COMMON               0      0       0       1        0.0%
 BITSFR1              0      0       0       2        0.0%
 SFR1                 0      0       0       2        0.0%
 STACK                0      0       0       2        0.0%
-BANK0               42     16      16       3       33.3%
+BANK0               42      3       3       3        4.5%
 ABS                  0      0       0       4        0.0%
 BITBANK0            42      0       0       5        0.0%
 DATA                 0      0       0       6        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Thu Apr 11 18:20:43 2024
+Symbol Table                                                                                   Thu May 16 23:53:28 2024
 
-                     l13 03FD                       l21 037F                       l16 037E  
-                     u60 03C4                       u70 03D2                       u71 03D1  
-                     u80 03EF                       u65 03B7                       u90 03FD  
-                     u66 03B8                       u91 03FC                       u67 03BD  
-                     u68 03BE                       u85 03E2                       u69 03C3  
-                     u86 03E3                       u87 03E8                       u88 03E9  
-                     u89 03EE                      l601 036C                      l603 036E  
-                    l611 0388                      l605 0375                      l613 038D  
-                    l607 037F                      l609 0383                      l593 0394  
-                    l595 039E                      l597 03A7                      l599 03D2  
-                    u100 038D                      u101 038C                     _main 037F  
-                   btemp 004E                     start 0000          __end_of_Delayms 03FE  
-                  ?_main 001E                    _TRISA 0085                    status 0003  
-                  wtemp0 004E          __initialization 03FE             __end_of_main 0394  
-                 ??_main 0000             ?_onboardDemo 001C                ??_Delayms 0010  
-__end_of__initialization 03FE           __pcstackCOMMON 0000               __pmaintext 037F  
-                _Delayms 0394      Delayms@milliseconds 000C                  __ptext1 036C  
-                __ptext2 0394     end_of_initialization 03FE                Delayms@ms 0014  
-              _PORTAbits 0005      start_initialization 03FE             Delayms@count 0018  
-              ___latbits 0000            __pcstackBANK0 000C                 ?_Delayms 000C  
-          ??_onboardDemo 0000      __end_of_onboardDemo 037F                 main@argc 001E  
-               main@argv 0020              _onboardDemo 036C         onboardDemo@delay 001C  
+                     u30 03C0                       u31 03BF                       u40 03E1  
+                     u41 03E0                       u57 03C6                       u67 03D4  
+                     u77 03E7                       u87 03F5                      l600 03DD  
+                    l602 03E1                      l604 03EF                      l590 03BA  
+                    l592 03BC                      l594 03C0                      l586 03B5  
+                    l596 03CE                      l588 03BA                      l598 03DB  
+                    _RA0 0028                      _RA1 0029                     _main 03B5  
+                   btemp 004E                     start 0000                    ?_main 000C  
+                  status 0003                    wtemp0 004E          __initialization 03FE  
+           __end_of_main 03FE                   ??_main 000C                   _TRISA0 0428  
+                 _TRISA1 0429  __end_of__initialization 03FE               __pmaintext 03B5  
+   end_of_initialization 03FE      start_initialization 03FE                ___latbits 0000  
+          __pcstackBANK0 000C  

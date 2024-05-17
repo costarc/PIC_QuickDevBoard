@@ -1,54 +1,31 @@
-/* 
- * File:   main.c
- * Author: roniv
- *
- * Created on February 16, 2024, 12:26 AM
- */
-
-#include <stdio.h>
-#include <stdlib.h>
 #include <xc.h>
-#include <pic16f84a.h>
 
-typedef uint32_t DWORD;   // DWORD = unsigned 32 bit value
-typedef uint16_t WORD;    // WORD = unsigned 16 bit value
-typedef uint8_t BYTE;     // BYTE = unsigned 8 bit value
+// Configuration bits
+#pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)
+#pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
+#pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)
+#pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
 
-void Delayms(DWORD milliseconds)
-{
-    DWORD    ms;
-    DWORD   count;
-    
-    ms = milliseconds;
-    while (ms--)
-    {
-        count = 10;
-        while (count--);
-    }
-    //Nop();
-    return;
-}
+// Define _XTAL_FREQ if using delay functions
+#define _XTAL_FREQ 9804000  // 9.804 MHz crystal oscillator
 
-void onboardDemo(unsigned int delay) {
-    PORTAbits.RA1 = 1;
-    Delayms(delay);
-    PORTAbits.RA1 = 0;
-    Delayms(delay);
-}
-
-int main(int argc, char** argv) {
-    // RA0 - Push Button (Input)
-    // RA1 - LED (Output)
+void main(void) {
+    TRISA0 = 1;  // Set Ra0 as input (button)
+    TRISA1 = 0;  // Set Ra1 as output (LED)
+    RA1 = 0;     // Initialize LED off
     
-    
-    
+    int delay = 500;
     while (1) {
-        TRISA = 0b00111101;
-        while (PORTAbits.RA0) {
-            onboardDemo(500);
-        }
-        
-        onboardDemo(50);
-        
+        RA1 = 1;     // Turn on LED
+        if (RA0 == 0) // If button is pressed (active low)
+            __delay_ms(100); // Delay for 100ms (LED on duration)
+        else
+            __delay_ms(500); // Delay for 500ms (LED on duration)
+         
+        RA1 = 0;     // Turn off LED
+        if (RA0 == 0) // If button is pressed (active low)
+            __delay_ms(100); // Delay for 100ms (LED on duration)
+        else
+            __delay_ms(500); // Delay for 500ms (LED on duration)
     }
 }

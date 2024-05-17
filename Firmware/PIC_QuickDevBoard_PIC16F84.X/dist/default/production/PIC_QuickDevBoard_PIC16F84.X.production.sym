@@ -1,23 +1,25 @@
+_RA0 28 0 ABS 0
+_RA1 29 0 ABS 0
 __S0 400 0 ABS 0
-__S1 22 0 ABS 0
+__S1 F 0 ABS 0
 __S3 0 0 ABS 0
 __Hintentry 0 0 CODE 0
 __Lintentry 0 0 CODE 0
-_main 37F 0 CODE 0
+_main 3B5 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 4E 0 ABS 0
 start 0 0 CODE 0
-_TRISA 85 0 ABS 0
 reset_vec 0 0 CODE 0
 wtemp0 4E 0 ABS 0
-__end_of_onboardDemo 37F 0 CODE 0
-_onboardDemo 36C 0 CODE 0
+__Hconfig 2008 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
 __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
 ___int_stack_hi 0 0 STACK 2
+_TRISA0 428 0 ABS 0
 __Hfunctab 0 0 ENTRY 0
+_TRISA1 429 0 ABS 0
 __Lfunctab 0 0 ENTRY 0
-onboardDemo@delay 1C 0 BANK0 1
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
@@ -40,8 +42,7 @@ __LcstackBANK0 0 0 ABS 0
 __pcstackBANK0 C 0 BANK0 1
 __Hinit 0 0 CODE 0
 __Linit 0 0 CODE 0
-Delayms@ms 14 0 BANK0 1
-__end_of_main 394 0 CODE 0
+__end_of_main 3FE 0 CODE 0
 __Hsivt 0 0 CODE 0
 __Htext 0 0 ABS 0
 __Lsivt 0 0 CODE 0
@@ -49,20 +50,15 @@ __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
 end_of_initialization 3FE 0 CODE 0
 ___stacklo 0 0 ABS 0
-_PORTAbits 5 0 ABS 0
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
-__end_of_Delayms 3FE 0 CODE 0
 __Hbank0 0 0 ABS 0
 __Lbank0 0 0 ABS 0
 __Hbank1 0 0 BANK1 1
 __Lbank1 0 0 BANK1 1
 ___latbits 0 0 ABS 0
-Delayms@count 18 0 BANK0 1
 __Hpowerup 0 0 CODE 0
 __Lpowerup 0 0 CODE 0
-__ptext1 36C 0 CODE 0
-__ptext2 394 0 CODE 0
 ___stack_hi 0 0 STACK 2
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
@@ -73,7 +69,7 @@ __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
 __Hspace_0 400 0 ABS 0
 __Lspace_0 0 0 ABS 0
-__Hspace_1 22 0 ABS 0
+__Hspace_1 F 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hspace_2 0 0 ABS 0
 __Lspace_2 0 0 ABS 0
@@ -81,7 +77,8 @@ __Hcinit 400 0 CODE 0
 __Lcinit 3FE 0 CODE 0
 __Hspace_3 0 0 ABS 0
 __Lspace_3 0 0 ABS 0
-_Delayms 394 0 CODE 0
+__Hspace_4 400F 0 ABS 0
+__Lspace_4 0 0 ABS 0
 ___stack_lo 0 0 STACK 2
 __Hend_init 1 0 CODE 0
 __Lend_init 0 0 CODE 0
@@ -91,63 +88,38 @@ intlevel0 0 0 ENTRY 0
 intlevel1 0 0 ENTRY 0
 intlevel2 0 0 ENTRY 0
 intlevel3 0 0 ENTRY 0
-Delayms@milliseconds C 0 BANK0 1
 intlevel4 0 0 ENTRY 0
 intlevel5 0 0 ENTRY 0
-__HcstackCOMMON 0 0 ABS 0
-__LcstackCOMMON 0 0 ABS 0
-__pcstackCOMMON 0 0 COMMON 1
 start_initialization 3FE 0 CODE 0
 ___int_stack_lo 0 0 STACK 2
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
-__pmaintext 37F 0 CODE 0
+__pmaintext 3B5 0 CODE 0
 __initialization 3FE 0 CODE 0
 %segments
 reset_vec 0 1 CODE 0 0
 cinit 7FC 7FF CODE 7FC 0
-cstackBANK0 C 21 BANK0 C 1
-text2 728 7FB CODE 728 0
-maintext 6FE 727 CODE 6FE 0
-text1 6D8 6FD CODE 6D8 0
+cstackBANK0 C E BANK0 C 1
+maintext 76A 7FB CODE 76A 0
 %locals
 dist/default/production\PIC_QuickDevBoard_PIC16F84.X.production.o
-C:\Users\roniv\AppData\Local\Temp\xcAs18tc.\driver_tmp_1.s
-170 3FE 0 CODE 0
-173 3FE 0 CODE 0
+C:\Users\roniv\AppData\Local\Temp\xcAshnk.\driver_tmp_1.s
+176 3FE 0 CODE 0
 179 3FE 0 CODE 0
-181 3FE 0 CODE 0
-182 3FF 0 CODE 0
+185 3FE 0 CODE 0
+187 3FE 0 CODE 0
+188 3FF 0 CODE 0
 main.c
-39 37F 0 CODE 0
-45 37F 0 CODE 0
-46 37F 0 CODE 0
-47 382 0 CODE 0
-48 383 0 CODE 0
-47 388 0 CODE 0
-51 38D 0 CODE 0
-32 36C 0 CODE 0
-33 36C 0 CODE 0
-34 36E 0 CODE 0
-35 375 0 CODE 0
-36 377 0 CODE 0
-37 37E 0 CODE 0
-17 394 0 CODE 0
-22 394 0 CODE 0
-23 39D 0 CODE 0
-25 39E 0 CODE 0
-26 3A7 0 CODE 0
-26 3B3 0 CODE 0
-26 3B9 0 CODE 0
-26 3BF 0 CODE 0
-26 3C5 0 CODE 0
-26 3C8 0 CODE 0
-26 3CB 0 CODE 0
-23 3D2 0 CODE 0
-23 3DE 0 CODE 0
-23 3E4 0 CODE 0
-23 3EA 0 CODE 0
-23 3F0 0 CODE 0
-23 3F3 0 CODE 0
-23 3F6 0 CODE 0
-30 3FD 0 CODE 0
+12 3B5 0 CODE 0
+13 3B5 0 CODE 0
+14 3B7 0 CODE 0
+15 3B8 0 CODE 0
+17 3BA 0 CODE 0
+19 3BA 0 CODE 0
+20 3BC 0 CODE 0
+21 3C0 0 CODE 0
+23 3CE 0 CODE 0
+25 3DB 0 CODE 0
+26 3DD 0 CODE 0
+27 3E1 0 CODE 0
+29 3EF 0 CODE 0

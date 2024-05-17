@@ -1,108 +1,108 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"566 C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 566:     struct {
+"566 C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 566:     struct {
 [s S26 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S26 . RD WR WREN WRERR EEIF ]
 "565
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 565: typedef union {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 565: typedef union {
 [u S25 `S26 1 ]
 [n S25 . . ]
 "574
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 574: extern volatile EECON1bits_t EECON1bits __attribute__((address(0x088)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 574: extern volatile EECON1bits_t EECON1bits __attribute__((address(0x088)));
 [v _EECON1bits `VS25 ~T0 @X0 0 e@136 ]
 "279
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 279: extern volatile unsigned char EEADR __attribute__((address(0x009)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 279: extern volatile unsigned char EEADR __attribute__((address(0x009)));
 [v _EEADR `Vuc ~T0 @X0 0 e@9 ]
 "560
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 560: extern volatile unsigned char EECON1 __attribute__((address(0x088)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 560: extern volatile unsigned char EECON1 __attribute__((address(0x088)));
 [v _EECON1 `Vuc ~T0 @X0 0 e@136 ]
 "272
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 272: extern volatile unsigned char EEDATA __attribute__((address(0x008)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 272: extern volatile unsigned char EEDATA __attribute__((address(0x008)));
 [v _EEDATA `Vuc ~T0 @X0 0 e@8 ]
 "79
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 79:     struct {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 79:     struct {
 [s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
 [n S6 . C DC Z nPD nTO RP IRP ]
 "88
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 88:     struct {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 88:     struct {
 [s S7 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S7 . . RP0 RP1 ]
 "93
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 93:     struct {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 93:     struct {
 [s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S8 . CARRY . ZERO ]
 "78
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 78: typedef union {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 78: typedef union {
 [u S5 `S6 1 `S7 1 `S8 1 ]
 [n S5 . . . . ]
 "99
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 99: extern volatile STATUSbits_t STATUSbits __attribute__((address(0x003)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 99: extern volatile STATUSbits_t STATUSbits __attribute__((address(0x003)));
 [v _STATUSbits `VS5 ~T0 @X0 0 e@3 ]
 "312
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 312:     struct {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 312:     struct {
 [s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S16 . RBIF INTF T0IF RBIE INTE T0IE EEIE GIE ]
 "322
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 322:     struct {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 322:     struct {
 [s S17 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
 [n S17 . . TMR0IF . TMR0IE ]
 "311
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 311: typedef union {
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 311: typedef union {
 [u S15 `S16 1 `S17 1 ]
 [n S15 . . . ]
 "329
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 329: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 329: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
 "604
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 604: extern volatile unsigned char EECON2 __attribute__((address(0x089)));
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 604: extern volatile unsigned char EECON2 __attribute__((address(0x089)));
 [v _EECON2 `Vuc ~T0 @X0 0 e@137 ]
-"54 C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 54: __asm("INDF equ 00h");
+"54 C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 "61
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 61: __asm("TMR0 equ 01h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 61: __asm("TMR0 equ 01h");
 [; <" TMR0 equ 01h ;# ">
 "68
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 68: __asm("PCL equ 02h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 68: __asm("PCL equ 02h");
 [; <" PCL equ 02h ;# ">
 "75
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 75: __asm("STATUS equ 03h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 75: __asm("STATUS equ 03h");
 [; <" STATUS equ 03h ;# ">
 "161
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 161: __asm("FSR equ 04h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 161: __asm("FSR equ 04h");
 [; <" FSR equ 04h ;# ">
 "168
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 168: __asm("PORTA equ 05h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 168: __asm("PORTA equ 05h");
 [; <" PORTA equ 05h ;# ">
 "212
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 212: __asm("PORTB equ 06h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 212: __asm("PORTB equ 06h");
 [; <" PORTB equ 06h ;# ">
 "274
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 274: __asm("EEDATA equ 08h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 274: __asm("EEDATA equ 08h");
 [; <" EEDATA equ 08h ;# ">
 "281
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 281: __asm("EEADR equ 09h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 281: __asm("EEADR equ 09h");
 [; <" EEADR equ 09h ;# ">
 "288
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 288: __asm("PCLATH equ 0Ah");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 288: __asm("PCLATH equ 0Ah");
 [; <" PCLATH equ 0Ah ;# ">
 "308
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 308: __asm("INTCON equ 0Bh");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 308: __asm("INTCON equ 0Bh");
 [; <" INTCON equ 0Bh ;# ">
 "386
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 386: __asm("OPTION_REG equ 081h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 386: __asm("OPTION_REG equ 081h");
 [; <" OPTION_REG equ 081h ;# ">
 "456
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 456: __asm("TRISA equ 085h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 456: __asm("TRISA equ 085h");
 [; <" TRISA equ 085h ;# ">
 "500
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 500: __asm("TRISB equ 086h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 500: __asm("TRISB equ 086h");
 [; <" TRISB equ 086h ;# ">
 "562
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 562: __asm("EECON1 equ 088h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 562: __asm("EECON1 equ 088h");
 [; <" EECON1 equ 088h ;# ">
 "606
-[; ;C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 606: __asm("EECON2 equ 089h");
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 606: __asm("EECON2 equ 089h");
 [; <" EECON2 equ 089h ;# ">
 "6 C:\Apps\Microchip\xc8\pic\sources\c99\pic\__eeprom.c
 [; ;C:\Apps\Microchip\xc8\pic\sources\c99\pic\__eeprom.c: 6: __eecpymem(volatile unsigned char *to, __eeprom unsigned char * from, unsigned char size)

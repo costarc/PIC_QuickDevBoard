@@ -4,11 +4,11 @@
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\language_support.h" 1 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "C:\\Apps\\Microchip\\xc8\\pic\\sources\\c99\\pic\\__eeprom.c" 2
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 1 3
-# 18 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 1 3
+# 18 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
@@ -122,8 +122,8 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
-# 24 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\builtins.h" 1 3
+# 24 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\builtins.h" 1 3
 
 
 
@@ -199,7 +199,7 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 149 "C:\\Apps\\Microchip\\xc8\\pic\\include\\c99\\stdint.h" 2 3
-# 5 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\builtins.h" 2 3
+# 5 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\builtins.h" 2 3
 
 
 #pragma intrinsic(__nop)
@@ -210,35 +210,35 @@ extern void __nop(void);
 extern __attribute__((nonreentrant)) void _delay(uint32_t);
 #pragma intrinsic(_delaywdt)
 extern __attribute__((nonreentrant)) void _delaywdt(uint32_t);
-# 25 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
+# 25 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
 
 
 
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 1 3
-
-
-
-
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\htc.h" 1 3
-
-
-
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 1 3
-# 5 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\htc.h" 2 3
-# 6 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 2 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 1 3
 
 
 
 
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\htc.h" 1 3
 
 
 
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_chip_select.h" 1 3
-# 544 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_chip_select.h" 3
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 1 3
-# 44 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
-# 1 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\__at.h" 1 3
-# 45 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 2 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 1 3
+# 5 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\htc.h" 2 3
+# 6 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 2 3
+
+
+
+
+
+
+
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_chip_select.h" 1 3
+# 544 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_chip_select.h" 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 1 3
+# 44 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 1 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\__at.h" 1 3
+# 45 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 2 3
 
 
 
@@ -294,7 +294,7 @@ typedef union {
     };
 } STATUSbits_t;
 extern volatile STATUSbits_t STATUSbits __attribute__((address(0x003)));
-# 159 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 159 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char FSR __attribute__((address(0x004)));
 
 __asm("FSR equ 04h");
@@ -317,7 +317,7 @@ typedef union {
     };
 } PORTAbits_t;
 extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
-# 210 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 210 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char PORTB __attribute__((address(0x006)));
 
 __asm("PORTB equ 06h");
@@ -336,7 +336,7 @@ typedef union {
     };
 } PORTBbits_t;
 extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
-# 272 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 272 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char EEDATA __attribute__((address(0x008)));
 
 __asm("EEDATA equ 08h");
@@ -362,7 +362,7 @@ typedef union {
     };
 } PCLATHbits_t;
 extern volatile PCLATHbits_t PCLATHbits __attribute__((address(0x00A)));
-# 306 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 306 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char INTCON __attribute__((address(0x00B)));
 
 __asm("INTCON equ 0Bh");
@@ -387,7 +387,7 @@ typedef union {
     };
 } INTCONbits_t;
 extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-# 384 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 384 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char OPTION_REG __attribute__((address(0x081)));
 
 __asm("OPTION_REG equ 081h");
@@ -409,7 +409,7 @@ typedef union {
     };
 } OPTION_REGbits_t;
 extern volatile OPTION_REGbits_t OPTION_REGbits __attribute__((address(0x081)));
-# 454 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 454 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char TRISA __attribute__((address(0x085)));
 
 __asm("TRISA equ 085h");
@@ -425,7 +425,7 @@ typedef union {
     };
 } TRISAbits_t;
 extern volatile TRISAbits_t TRISAbits __attribute__((address(0x085)));
-# 498 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 498 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char TRISB __attribute__((address(0x086)));
 
 __asm("TRISB equ 086h");
@@ -444,7 +444,7 @@ typedef union {
     };
 } TRISBbits_t;
 extern volatile TRISBbits_t TRISBbits __attribute__((address(0x086)));
-# 560 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 560 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char EECON1 __attribute__((address(0x088)));
 
 __asm("EECON1 equ 088h");
@@ -460,11 +460,11 @@ typedef union {
     };
 } EECON1bits_t;
 extern volatile EECON1bits_t EECON1bits __attribute__((address(0x088)));
-# 604 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 604 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile unsigned char EECON2 __attribute__((address(0x089)));
 
 __asm("EECON2 equ 089h");
-# 621 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
+# 621 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f84a.h" 3
 extern volatile __bit CARRY __attribute__((address(0x18)));
 
 
@@ -634,9 +634,9 @@ extern volatile __bit nRBPU __attribute__((address(0x40F)));
 
 
 extern volatile __bit nTO __attribute__((address(0x1C)));
-# 545 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_chip_select.h" 2 3
-# 14 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 2 3
-# 76 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 3
+# 545 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_chip_select.h" 2 3
+# 14 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 2 3
+# 76 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 3
 __attribute__((__unsupported__("The " "FLASH_READ" " macro function is no longer supported. Please use the MPLAB X MCC."))) unsigned char __flash_read(unsigned short addr);
 
 __attribute__((__unsupported__("The " "FLASH_WRITE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_write(unsigned short addr, unsigned short data);
@@ -649,12 +649,12 @@ __attribute__((__unsupported__("The " "FLASH_ERASE" " macro function is no longe
 # 114 "C:\\Apps\\Microchip\\xc8\\pic\\include\\eeprom_routines.h" 3
 extern void eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
-# 84 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 2 3
-# 118 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 3
+# 84 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 2 3
+# 118 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.h" 3
 extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
-# 29 "C:/Apps/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
+# 29 "C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
 # 1 "C:\\Apps\\Microchip\\xc8\\pic\\sources\\c99\\pic\\__eeprom.c" 2
 
 
