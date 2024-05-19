@@ -1,5 +1,5 @@
 # PIC_QuickDevBoard
-Small and simple PIC16F85 &amp; PIC24FJ Development Board with Programming Support for PICKit
+Small and simple PIC16F &amp; PIC24F Development Board with Programming Support for PICKit
 
 Rev 2.3
 - Added demo project for all three suported PIC models
