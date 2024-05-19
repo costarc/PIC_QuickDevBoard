@@ -1,5 +1,5 @@
 _RA0 28 0 ABS 0
-_RA1 29 0 ABS 0
+_RB4 34 0 ABS 0
 __S0 400 0 ABS 0
 __S1 F 0 ABS 0
 __S3 0 0 ABS 0
@@ -18,8 +18,8 @@ __Lram 0 0 ABS 0
 ___int_stack_hi 0 0 STACK 2
 _TRISA0 428 0 ABS 0
 __Hfunctab 0 0 ENTRY 0
-_TRISA1 429 0 ABS 0
 __Lfunctab 0 0 ENTRY 0
+_TRISB4 434 0 ABS 0
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
@@ -103,7 +103,7 @@ cstackBANK0 C E BANK0 C 1
 maintext 76A 7FB CODE 76A 0
 %locals
 dist/default/production\PIC_QuickDevBoard_PIC16F84.X.production.o
-C:\Users\roniv\AppData\Local\Temp\xcAshnk.\driver_tmp_1.s
+C:\Users\roniv\AppData\Local\Temp\xcAs134s.\driver_tmp_1.s
 176 3FE 0 CODE 0
 179 3FE 0 CODE 0
 185 3FE 0 CODE 0

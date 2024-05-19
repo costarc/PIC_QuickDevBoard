@@ -10,19 +10,19 @@
 #define _XTAL_FREQ 9804000  // 9.804 MHz crystal oscillator
 
 void main(void) {
-    TRISA0 = 1;  // Set Ra0 as input (button)
-    TRISA1 = 0;  // Set Ra1 as output (LED)
-    RA1 = 0;     // Initialize LED off
+    TRISA0 = 1;  // Set RA0 as input (button)
+    TRISB4 = 0;  // Set RB4 as output (LED)
+    RB4 = 0;     // Initialize LED off
     
     int delay = 500;
     while (1) {
-        RA1 = 1;     // Turn on LED
+        RB4 = 1;     // Turn on LED
         if (RA0 == 0) // If button is pressed (active low)
             __delay_ms(100); // Delay for 100ms (LED on duration)
         else
             __delay_ms(500); // Delay for 500ms (LED on duration)
          
-        RA1 = 0;     // Turn off LED
+        RB4 = 0;     // Turn off LED
         if (RA0 == 0) // If button is pressed (active low)
             __delay_ms(100); // Delay for 100ms (LED on duration)
         else

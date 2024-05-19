@@ -46,19 +46,22 @@
   Section: Included Files
 */
 #include "mcc_generated_files/system.h"
+#include "mcc_generated_files/pin_manager.h"
 #include "hardwareprofile.h"
 
 typedef uint32_t DWORD;   // DWORD = unsigned 32 bit value
 typedef uint16_t WORD;    // WORD = unsigned 16 bit value
 typedef uint8_t BYTE;     // BYTE = unsigned 8 bit value
 
+#define PS2CLOCK_DELAY (DWORD) 2    // Gives a clock of about 13.60Khz 
+#define PS2CLOCK_DELAY_HALF (DWORD) 1
+#define PS2CLOCK_SENDINTERVAL  2  // Interval to wait after sending a key
 // Description: An approximate calculation of how many times to loop to delay 1 ms in the Delayms function
 #define DELAY_PRESCALER   (BYTE)      100  // this is an approximate value to get 1000ms ticks
 #define DELAY_OVERHEAD    (BYTE)      5
 #define MILLISECDELAY     (WORD)      ((GetInstructionClock()/DELAY_PRESCALER/(WORD)1000) - DELAY_OVERHEAD)
 
-
-void Delayms(DWORD milliseconds)
+void __delay_ms(DWORD milliseconds)
 {
     DWORD    ms;
     DWORD   count;
@@ -73,98 +76,23 @@ void Delayms(DWORD milliseconds)
     return;
 }
 
-void SetAllOutput() {
-    _TRISA0 = 0;
-    _TRISA1 = 0;
-    _TRISA2 = 0;
-    _TRISA3 = 0;
-    _TRISA4 = 0;
-    _TRISB0 = 0;
-    _TRISB1 = 0;
-    _TRISB2 = 0;
-    _TRISB3 = 0;
-    _TRISB4 = 0;
-    _TRISB5 = 0;
-    _TRISB7 = 0;
-    _TRISB8 = 0;
-    _TRISB9 = 0;
-    _TRISB10 = 0;
-    _TRISB11 = 0;
-    _TRISB13 = 0;
-    _TRISB14 = 0;
-    _TRISB15 = 0;
-    Delayms(10);
-}
-
-void tesfFlashAll() {
-    SetAllOutput();
-    _LATA0 = 1;
-    _LATA1 = 1;
-    _LATA2 = 1;
-    _LATA3 = 1;
-    _LATA4 = 1;       
-    _LATB0 = 1;
-    _LATB1 = 1;
-    _LATB2 = 1;
-    _LATB3 = 1;
-    _LATB4 = 1;
-    _LATB5 = 1;
-    _LATB7 = 1;
-    _LATB8 = 1;
-    _LATB9 = 1;
-    _LATB10 = 1;
-    _LATB11 = 1;
-    _LATB13 = 1;
-    _LATB14 = 1;
-    _LATB15 = 1;
-    Delayms(500);
-    _LATA0 = 0;
-    _LATA1 = 0;
-    _LATA2 = 0;
-    _LATA3 = 0;
-    _LATA4 = 0; 
-    _LATB0 = 0;
-    _LATB1 = 0;
-    _LATB2 = 0;
-    _LATB3 = 0;
-    _LATB4 = 0;
-    _LATB5 = 0;
-    _LATB7 = 0;
-    _LATB8 = 0;
-    _LATB9 = 0;
-    _LATB10 = 0;
-    _LATB11 = 0;
-    _LATB13 = 0;
-    _LATB14 = 0;
-    _LATB15 = 0;
-    Delayms(500);
-}
-
-void onboardDemo() {
-    _RA1 = 1;
-    Delayms(50);
-    _RA1 = 0;
-    Delayms(50);
-}
-
 int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
-    SetAllOutput();
     
     while (1) {
-        _TRISA0 = 1;
-        while (_RA0) {
-            tesfFlashAll();
-        }
-        
-        onboardDemo();
-        
-    }
+ 
+        LED_SetHigh();
+        if (BUTTON_GetValue() == 0)
+            __delay_ms(100);
+        else
+            __delay_ms(500);
+        LED_SetLow();
+        if (BUTTON_GetValue() == 0)
+            __delay_ms(100);
+        else
+            __delay_ms(500);
+    }   
 
-    return 1;
 }
-/**
- End of File
-*/

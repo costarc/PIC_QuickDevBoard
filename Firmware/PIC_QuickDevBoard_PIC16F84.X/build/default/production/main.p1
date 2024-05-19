@@ -3,12 +3,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "732 C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
 [; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 732: extern volatile __bit TRISA0 __attribute__((address(0x428)));
 [v _TRISA0 `Vb ~T0 @X0 0 e@1064 ]
-"735
-[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 735: extern volatile __bit TRISA1 __attribute__((address(0x429)));
-[v _TRISA1 `Vb ~T0 @X0 0 e@1065 ]
-"663
-[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 663: extern volatile __bit RA1 __attribute__((address(0x29)));
-[v _RA1 `Vb ~T0 @X0 0 e@41 ]
+"759
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 759: extern volatile __bit TRISB4 __attribute__((address(0x434)));
+[v _TRISB4 `Vb ~T0 @X0 0 e@1076 ]
+"687
+[; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 687: extern volatile __bit RB4 __attribute__((address(0x34)));
+[v _RB4 `Vb ~T0 @X0 0 e@52 ]
 "660
 [; ;C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h: 660: extern volatile __bit RA0 __attribute__((address(0x28)));
 [v _RA0 `Vb ~T0 @X0 0 e@40 ]
@@ -68,10 +68,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 4:     TRISA0 = 1;
 [p x FOSC  =  HS         ]
 "5
-[; ;main.c: 5:     TRISA1 = 0;
+[; ;main.c: 5:     TRISB4 = 0;
 [p x WDTE  =  OFF        ]
 "6
-[; ;main.c: 6:     RA1 = 0;
+[; ;main.c: 6:     RB4 = 0;
 [p x PWRTE  =  OFF       ]
 "7
 [; ;main.c: 7: 
@@ -88,10 +88,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TRISA0 -> -> 1 `i `b ]
 "14
 [; ;main.c: 14:             _delay((unsigned long)((500)*(9804000/4000.0)));
-[e = _TRISA1 -> -> 0 `i `b ]
+[e = _TRISB4 -> -> 0 `i `b ]
 "15
 [; ;main.c: 15: 
-[e = _RA1 -> -> 0 `i `b ]
+[e = _RB4 -> -> 0 `i `b ]
 "17
 [; ;main.c: 17:         if (RA0 == 0)
 [v _delay `i ~T0 @X0 1 a ]
@@ -102,7 +102,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "19
 [; ;main.c: 19:         else
-[e = _RA1 -> -> 1 `i `b ]
+[e = _RB4 -> -> 1 `i `b ]
 "20
 [; ;main.c: 20:             _delay((unsigned long)((500)*(9804000/4000.0)));
 [e $ ! == -> _RA0 `i -> 0 `i 31  ]
@@ -117,7 +117,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 9804000 `l `d .4000.0 `ul ]
 [e :U 32 ]
 "25
-[e = _RA1 -> -> 0 `i `b ]
+[e = _RB4 -> -> 0 `i `b ]
 "26
 [e $ ! == -> _RA0 `i -> 0 `i 33  ]
 "27

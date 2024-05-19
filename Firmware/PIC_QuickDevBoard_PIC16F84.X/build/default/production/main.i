@@ -669,18 +669,18 @@ extern __bank0 __bit __timeout;
 
 void main(void) {
     TRISA0 = 1;
-    TRISA1 = 0;
-    RA1 = 0;
+    TRISB4 = 0;
+    RB4 = 0;
 
     int delay = 500;
     while (1) {
-        RA1 = 1;
+        RB4 = 1;
         if (RA0 == 0)
             _delay((unsigned long)((100)*(9804000/4000.0)));
         else
             _delay((unsigned long)((500)*(9804000/4000.0)));
 
-        RA1 = 0;
+        RB4 = 0;
         if (RA0 == 0)
             _delay((unsigned long)((100)*(9804000/4000.0)));
         else

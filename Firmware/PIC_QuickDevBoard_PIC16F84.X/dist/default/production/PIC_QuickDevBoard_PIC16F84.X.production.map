@@ -5,10 +5,10 @@ Linker command line:
 -W-3 --edf=C:\Apps\Microchip\xc8\pic\dat\20240104201356_en.msgs -cn \
   -h+dist/default/production\PIC_QuickDevBoard_PIC16F84.X.production.sym \
   --cmf=dist/default/production\PIC_QuickDevBoard_PIC16F84.X.production.cmf \
-  -z -Q16F84A -oC:\Users\roniv\AppData\Local\Temp\xcAshnk.\driver_tmp_3.o \
+  -z -Q16F84A -oC:\Users\roniv\AppData\Local\Temp\xcAs134s.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/PIC_QuickDevBoard_PIC16F84.X.production.map \
-  --md=C:\Users\roniv\AppData\Local\Temp\xcAshnk.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\roniv\AppData\Local\Temp\xcAs134s.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-03FFh -ASTRCODE=00h-03FFh \
   -ASTRING=00h-0FFhx4 -ACONST=00h-0FFhx4 -AENTRY=00h-0FFhx4 \
   -ABANK0=0Ch-04Dh -ARAM=0Ch-04Dh -AABS1=0Ch-04Fh -ACOMMON=04Eh-04Fh \
@@ -17,7 +17,7 @@ Linker command line:
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry,sivt,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\roniv\AppData\Local\Temp\xcAshnk.\driver_tmp_12.o \
+  C:\Users\roniv\AppData\Local\Temp\xcAs134s.\driver_tmp_12.o \
   dist/default/production\PIC_QuickDevBoard_PIC16F84.X.production.o 
 
 Object code version is 3.11
@@ -27,7 +27,7 @@ Machine type is 16F84A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\roniv\AppData\Local\Temp\xcAshnk.\driver_tmp_12.o
+C:\Users\roniv\AppData\Local\Temp\xcAs134s.\driver_tmp_12.o
                 end_init                              0        0        1        0       0
                 config                             2007     2007        1        0       4
 dist/default/production\PIC_QuickDevBoard_PIC16F84.X.production.o
@@ -105,9 +105,9 @@ UNUSED ADDRESS RANGES
                                   Symbol Table
 
 _RA0                     (abs)        0028
-_RA1                     (abs)        0029
+_RB4                     (abs)        0034
 _TRISA0                  (abs)        0428
-_TRISA1                  (abs)        0429
+_TRISB4                  (abs)        0434
 __H__absolute__          __absolute__ 0000
 __Habs1                  abs1         0000
 __Hbank0                 bank0        0000

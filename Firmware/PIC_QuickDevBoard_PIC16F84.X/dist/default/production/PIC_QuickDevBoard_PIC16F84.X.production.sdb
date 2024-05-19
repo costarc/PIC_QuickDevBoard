@@ -15,12 +15,12 @@
 [v _main main `(v  1 e 1 0 ]
 "660 C:/Users/roniv/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f84a.h
 [v _RA0 RA0 `VEb  1 e 0 @40 ]
-"663
-[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"687
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
 "732
 [v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
-"735
-[v _TRISA1 TRISA1 `VEb  1 e 0 @1065 ]
+"759
+[v _TRISB4 TRISB4 `VEb  1 e 0 @1076 ]
 "12 C:\Users\roniv\Dev\github\PIC_QuickDevBoard\Firmware\PIC_QuickDevBoard_PIC16F84.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Thu May 16 23:53:28 2024
+                                                                                               Sun May 19 19:11:04 2024
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	16F84A
@@ -88,8 +88,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
     74     0088                     	;# 
     75     0089                     	;# 
     76     0028                     _RA0	set	40
-    77     0029                     _RA1	set	41
-    78     0429                     _TRISA1	set	1065
+    77     0034                     _RB4	set	52
+    78     0434                     _TRISB4	set	1076
     79     0428                     _TRISA0	set	1064
     80                           
     81                           	psect	cinit
@@ -160,17 +160,17 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    146     03B6  1405               	bsf	5,0	;volatile
    147                           
    148                           ;main.c: 14:             _delay((unsigned long)((500)*(9804000/4000.0)));
-   149     03B7  1085               	bcf	5,1	;volatile
+   149     03B7  1206               	bcf	6,4	;volatile
    150                           
    151                           ;main.c: 15: 
    152     03B8  1283               	bcf	3,5	;RP0=0, select bank0
-   153     03B9  1085               	bcf	5,1	;volatile
+   153     03B9  1206               	bcf	6,4	;volatile
    154     03BA                     l588:
    155     03BA                     l590:
    156                           
    157                           ;main.c: 19:         else
    158     03BA  1283               	bcf	3,5	;RP0=0, select bank0
-   159     03BB  1485               	bsf	5,1	;volatile
+   159     03BB  1606               	bsf	6,4	;volatile
    160     03BC                     l592:
    161                           
    162                           ;main.c: 20:             _delay((unsigned long)((500)*(9804000/4000.0)));
@@ -215,7 +215,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    201     03DA  0000               	nop
    202     03DB                     l598:
    203     03DB  1283               	bcf	3,5	;RP0=0, select bank0
-   204     03DC  1085               	bcf	5,1	;volatile
+   204     03DC  1206               	bcf	6,4	;volatile
    205     03DD                     l600:
    206     03DD  1805               	btfsc	5,0	;volatile
    207     03DE  2BE0               	goto	u41
@@ -333,7 +333,7 @@ DATA                 0      0       0       6        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Thu May 16 23:53:28 2024
+Symbol Table                                                                                   Sun May 19 19:11:04 2024
 
                      u30 03C0                       u31 03BF                       u40 03E1  
                      u41 03E0                       u57 03C6                       u67 03D4  
@@ -341,10 +341,10 @@ Symbol Table                                                                    
                     l602 03E1                      l604 03EF                      l590 03BA  
                     l592 03BC                      l594 03C0                      l586 03B5  
                     l596 03CE                      l588 03BA                      l598 03DB  
-                    _RA0 0028                      _RA1 0029                     _main 03B5  
+                    _RA0 0028                      _RB4 0034                     _main 03B5  
                    btemp 004E                     start 0000                    ?_main 000C  
                   status 0003                    wtemp0 004E          __initialization 03FE  
            __end_of_main 03FE                   ??_main 000C                   _TRISA0 0428  
-                 _TRISA1 0429  __end_of__initialization 03FE               __pmaintext 03B5  
+                 _TRISB4 0434  __end_of__initialization 03FE               __pmaintext 03B5  
    end_of_initialization 03FE      start_initialization 03FE                ___latbits 0000  
           __pcstackBANK0 000C  

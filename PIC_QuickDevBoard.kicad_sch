@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "PIC24 & PIC16F84 Programmer & Dev Board")
-		(date "2024-05-17")
+		(date "2024-05-19")
 		(rev "2.3")
 		(company "RCC 2024")
 		(comment 1 "https://github.com/costarc/PIC_QuickDevBoard")
@@ -7968,6 +7968,28 @@
 			)
 		)
 	)
+	(global_label "RB4"
+		(shape input)
+		(at 233.432 211.9811 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d82b69b-484c-42f4-803c-4bba141fb1b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.1667 211.9811 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RC0"
 		(shape bidirectional)
 		(at 396.24 102.87 180)
@@ -8025,28 +8047,6 @@
 		(uuid "adccced8-dc7e-47fd-974c-4791a9eb9fc9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 382.496 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RA1"
-		(shape input)
-		(at 233.432 211.9811 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ae3a8cd4-14fe-484d-86b9-2d70126a72ab")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.9853 211.9811 0)
 			(effects
 				(font
 					(size 1.27 1.27)

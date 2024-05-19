@@ -2,6 +2,7 @@
 Small and simple PIC16F85 &amp; PIC24FJ Development Board with Programming Support for PICKit
 
 Rev 2.3
+- Added demo project for all three suported PIC models
 - Changed LED to PORT RB4 to be compatible with the 3 PICs supported by the board
 - Added missing terminals in the mini-usb custom footprint
 - Changed LED resistor from 270R to 470R to avoid led light too bright
