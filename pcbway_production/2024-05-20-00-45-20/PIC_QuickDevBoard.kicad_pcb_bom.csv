@@ -1,0 +1,27 @@
+﻿designator,quantity,value,pack,mpn,mount_type
+"C1, C2, C3, C8, C9",5,0.1uF,C_Disc_D3.4mm_W2.1mm_P2.50mm,,tht
+C4,1,10uF,CP_Radial_Tantal_D4.5mm_P2.50mm,,tht
+"C5, C6",2,30pf,C_Disc_D3.4mm_W2.1mm_P2.50mm,,tht
+C7,1,10uF,CP_Radial_D6.3mm_P2.50mm,,tht
+D1,1,LED,LED_D3.0mm,,tht
+"H1, H2, H3, H4",4,MountingHole,MountingHole_2.5mm_Pad,,tht
+J1,1,Conn_01x08_Pin,PinHeader_1x08_P2.54mm_Vertical,,tht
+J10,1,VCC Lines,PinHeader_2x03_P2.00mm_Vertical,,tht
+"J2, J3",2,Conn_01x08_Pin,PinHeader_1x10_P2.54mm_Vertical,,tht
+J4,1,PowerSource,PinHeader_1x02_P2.54mm_Vertical,,tht
+J5,1,PICKitConnector,PinHeader_1x06_P2.54mm_Vertical,,tht
+J6,1,USB_B_Micro,USB_Mini-B_Tensility_4Holes,,tht
+J7,1,PGEC_LINES,PinHeader_2x03_P2.00mm_Vertical,,tht
+J8,1,PGED_LINES,PinHeader_2x03_P2.00mm_Vertical,,tht
+J9,1,MCLR_LINES,PinHeader_2x03_P2.00mm_Vertical,,tht
+JP1,1,Program,PinHeader_1x02_P2.54mm_Vertical,,tht
+R1,1,4.7K,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,tht
+R2,1,270,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,tht
+"R3, R5",2,10K,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,tht
+R4,1,470R,R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,,tht
+SW1,1,SW_Push,SW_PUSH_6mm_2Holes,,tht
+U1,1,PIC24F,DIP-28_W7.62mm,,tht
+U2,1,PIC16F84,DIP-18_W7.62mm,,tht
+U3,1,LDA33A,SOT-223-3_TabPin2,,smt
+U4,1,PIC16F1459-IP,DIP-20_W7.62mm,,tht
+Y1,1,Crystal,Crystal_HC49-U_Vertical,,tht
