@@ -1,1 +1,0 @@
- -c -mcpu=$(MP_PROCESSOR_OPTION)        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"C:\Users\roniv\Dev\github\PIC_QuickDevBoard\Firmware\PIC_QuickDevBoard_PIC24FJ32GB002.X\mcc_generated_files\mcc.c
