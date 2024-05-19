@@ -47,8 +47,7 @@ USB connector will provide the correct 3.3V for the PIC24 via coversion using th
 Operation * Programming
 -----------------------
 
-To develop & program PIC16, set the three jumpers in position PIC16 (left)
-To develop & program PIC24, set the three jumpers in position PIC24 (right)
+To develop & program A PIC device, set the three jumpers in position PIC24F, PIC16F14 OR PIC16F84 depending on which device you are being used.
 
 To program the PIC24, remove jumper "Program". Re-insert after programming.
 
@@ -57,12 +56,10 @@ Development Resources
 All  I/O pins are exposed thorugh the Pin Headers in the board.
 Additionaly, a Pushb Button and a LED are available for quick tests and experiments.
 Push Button is connected to RA0
-LED is connected to RA1
+LED is connected to RB4
 
 These components can be removed from the board if they are not needed or if they interfere with normal operation of these signals in the Pin Headers.
 
 Default Demonstration Firmware
 ------------------------------
-The default firmware (in folder Firmware\PIC_QuickDevBoard_<PIC Model>\dist\default\production\) blinks the onboard LED and also all PORTs in the breakout headers. The blink is done every half second.
-When the push button (RA0) is pressed, the onboard LED will blink every 10 ms, and all the other outputs (blonks) are stopped.
-To see the signal (blink leds) on all PORTs, connect a led using wire jumpers to each pin in the breakout (do not forget to connect the gnd to the other pin in the LED).
+The demonstration firmware works the same for all models - the LED on RB4 will blink slowly, but if the push button is pressed it will blink faster.
