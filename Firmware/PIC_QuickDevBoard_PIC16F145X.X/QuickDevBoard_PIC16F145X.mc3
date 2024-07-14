@@ -93,7 +93,7 @@
    <tokenMap class="java.util.TreeMap">
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="graph-location-data"/>
-         <value>{&quot;mccDevice&quot;:{&quot;loc&quot;:&quot;648.5 47&quot;,&quot;pos&quot;:&quot;648.5 47&quot;},&quot;systemGroup&quot;:{&quot;loc&quot;:&quot;-19 -384.9796875&quot;,&quot;pos&quot;:&quot;-19 -384.9796875&quot;},&quot;module14&quot;:{&quot;loc&quot;:&quot;-100.77811687161585 -0.5&quot;,&quot;pos&quot;:&quot;-100.77811687161585 -0.5&quot;}}</value>
+         <value>{&quot;mccDevice&quot;:{&quot;loc&quot;:&quot;102.5 -81&quot;,&quot;pos&quot;:&quot;102.5 -81&quot;},&quot;systemGroup&quot;:{&quot;loc&quot;:&quot;-19 -384.9796875&quot;,&quot;pos&quot;:&quot;-19 -384.9796875&quot;},&quot;module14&quot;:{&quot;loc&quot;:&quot;-100.77811687161585 -0.5&quot;,&quot;pos&quot;:&quot;-100.77811687161585 -0.5&quot;}}</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="state"/>
